@@ -1,0 +1,552 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "poppins", "roboto", "montserrat", sans-serif;
+  background-color: #fafafa;
+}
+
+nav {
+  margin: auto;
+  width: 90%;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+#logo_img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo_img img {
+  width: 120px;
+  height: 41px;
+}
+
+.open_btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.line {
+  width: 32px;
+  height: 2px;
+  background: black;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0%;
+}
+
+nav li {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav ul a {
+  color: black;
+}
+
+nav ul a:hover {
+  color: rgb(23, 45, 170);
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    margin-top: 21px;
+    margin-bottom: 21px;
+  }
+
+  .open_btn {
+    display: none;
+  }
+
+  #nav_list {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav_menu {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+  }
+}
+
+/* HERO SECTION */
+
+/* .hero {
+  background-image: url(/What\ is\ Digital\ Out-of-home\ \(DOOH\)\ advertising_\ 3\ \(1\).png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0%;
+  padding: 0%;
+  padding: 40px 10px 40px 10px;
+  position: relative;
+}
+
+@media (min-width: 40em) {
+  
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(1, 2, 66, 0.726);
+  z-index: 0;
+}
+
+.hero-ctn {
+  margin: auto;
+  color: #fafafa;
+  position: relative;
+  z-index: 1;
+  width: 90%;
+}
+
+.hero-ctn h1 {
+  z-index: 100;
+}
+
+.prj {
+  font-size: 22px;
+}
+
+.hero-ctn h1 {
+  font-size: 23px;
+  font-family: "montserrat";
+}
+
+.hero-ctn h2 {
+  font-size: 28px;
+  font-family: "montserrat";
+}
+
+@media (min-width: 40em) {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+  .hero-ctn {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .prj-span {
+    font-size: 69px;
+    font-weight: 400;
+  }
+
+  .hero-ctn h1 {
+    font-size: 89px;
+    margin: 0%;
+    width: 20%;
+    line-height: 90px;
+    padding-bottom: 30px;
+  }
+
+  .booking-span {
+    font-weight: 500;
+  }
+
+  .hero-ctn h2 {
+    font-size: 48px;
+    margin: 0%;
+    width: 79%;
+    line-height: 42px;
+    padding-bottom: 20px;
+  }
+
+  .hero-ctn p {
+    font-size: 20px;
+    width: 68%;
+  }
+}
+
+.hero-btn {
+  background: none;
+  border: 1px solid #fafafa;
+  border-radius: 30px;
+  color: #fafafa;
+  padding: 12px 20px 12px 20px;
+  font-size: 18px;
+}
+
+.hero-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fafafa;
+
+}
+
+@media (min-width: 40em) {
+  .hero-btn {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: 1px solid #fafafa;
+    border-radius: 30px;
+    color: #fafafa;
+    padding: 14px 80px 14px 80px;
+    font-size: 25px;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .hero-btn img {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.hero-image {
+  display: none;
+}
+
+@media (min-width: 40em) {
+  .hero-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+  }
+}
+ */
+
+ /* General Hero Section */
+.hero {
+  background-image: url('/What is Digital Out-of-home (DOOH) advertising_ 3 (1).png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fafafa;
+  padding: 60px 20px;
+  text-align: left;
+}
+
+.hero h1 {
+  margin: 0%;
+}
+
+/* Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 30, 80, 0.75); /* A refined blue tone */
+  z-index: 0;
+}
+
+/* Hero Container */
+.hero-ctn {
+  position: relative;
+  z-index: 1;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.hero-txt-ctn {
+  margin-top: -30px;
+}
+
+/* Typography */
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.prj-span {
+  color: #4da6ff; /* Light blue accent */
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.hero h2 {
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.booking-span {
+  color: #9ecfff;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+/* Button */
+.hero-btn {
+  background-color: #1a4fff;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0e38a1;
+}
+
+.hero-btn a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .hero-ctn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 83%;
+  }
+
+  .hero-txt-ctn {
+    max-width: 60%;
+  }
+
+  .hero h1 {
+    font-size: 72px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero-btn {
+    font-size: 20px;
+    padding: 16px 40px;
+  }
+
+  .hero-btn img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+.first-section {
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+}
+
+@media (min-width: 40em) {
+  .first-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 60px;
+  }
+
+  .first-section p {
+    font-size: 15px;
+  }
+
+  .article-one {
+    width: 70%;
+    /* border: 1px solid red; */
+  }
+
+  .article-two {
+    width: 65%;
+    /* border: 1px solid red; */
+  }
+}
+
+.first-section h2 {
+  color: #031c6c;
+  /* font-size: 28px; */
+}
+
+.second-section {
+  width: 90%;
+  margin: auto;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.second-section button {
+  padding: 16px;
+  border-radius: 40px;
+  border: none;
+  /* background-color: #042592; */
+  background-color: #1a4fff;
+  font-size: 16px;
+  color: #fafafa;
+}
+
+.second-section button:hover{
+  
+  background-color: #1a44da;
+  /* color: #113bc5; */
+}
+
+.second-section button a {
+  color: #fafafa;
+}
+
+@media (min-width: 40em) {
+  .second-section {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+
+
+.second-section h2 {
+  color: #031c6c;
+  /* font-size: 28px; */
+}
+
+
+footer {
+  background-color: #031c6c;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fafafa;
+}
+
+.footer-img {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-img .img-div {
+  background-color: #fafafa;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .img-div a {
+  margin: 0%;
+  padding: 0%;
+}
+
+.footer-img img {
+  width: 16px;
+}
+
+.facebook img{
+  width: 16px;
+  height: 22px;
+  padding-top: 5px;
+}
+
+footer button {
+  padding: 12px;
+  border-radius: 40px;
+  border: none;
+  font-size: 17px;
+}
+
+footer button a {
+  color: #031C6C;
+}
+
+@media (min-width: 40em) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fafafa;
+  }
+
+  footer button {
+    padding: 12px;
+    border-radius: 40px;
+    border: none;
+    font-size: 17px;
+  }
+
+  .footer-img {
+    margin-bottom: 0;
+  }
+}
+
+.footer-p2 {
+  margin: 0%;
+}
+
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
