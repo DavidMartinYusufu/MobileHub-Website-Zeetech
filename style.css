@@ -10,6 +10,7 @@ nav {
   width: 90%;
   margin-top: 21px;
   margin-bottom: 21px;
+  font-family: "montserrat";
 }
 
 #logo_img {
@@ -100,6 +101,50 @@ nav ul a:hover {
     align-items: center;
     padding: 0%;
   }
+}
+
+/* DATA SECTION */
+
+.data-section {
+  background-color: #f5faff;
+  padding: 60px 20px;
+}
+
+.data-section-ctn {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.data-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  /* color: #1a4fff; */
+  color: #3b82f6;
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.counter {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0e1a35;
+  font-family: "Montserrat", sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 40em) {
+  .counter {
+    font-size: 48px;
+  }
+}
+
+.data-section-ctn > div:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
 }
 
 /* HERO SECTION */
@@ -258,9 +303,9 @@ nav ul a:hover {
 }
  */
 
- /* General Hero Section */
+/* General Hero Section */
 .hero {
-  background-image: url('/What is Digital Out-of-home (DOOH) advertising_ 3 (1).png');
+  background-image: url("/What is Digital Out-of-home (DOOH) advertising_ 3 (1).png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -277,7 +322,8 @@ nav ul a:hover {
 .hero::before {
   content: "";
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(10, 30, 80, 0.75); /* A refined blue tone */
@@ -300,7 +346,7 @@ nav ul a:hover {
 .hero h1 {
   font-size: 48px;
   line-height: 1.2;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -392,7 +438,6 @@ nav ul a:hover {
   }
 }
 
-
 .first-section {
   width: 90%;
   margin: auto;
@@ -444,8 +489,7 @@ nav ul a:hover {
   color: #fafafa;
 }
 
-.second-section button:hover{
-  
+.second-section button:hover {
   background-color: #1a44da;
   /* color: #113bc5; */
 }
@@ -461,13 +505,32 @@ nav ul a:hover {
   }
 }
 
-
-
 .second-section h2 {
   color: #031c6c;
   /* font-size: 28px; */
 }
 
+/* Partners section */
+.partners-ctn {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: "Montserrat";
+  color: #4a4c70;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.perceent-logo-ctn img {
+  width: 100%;
+}
+
+.perceent-logo-ctn {
+  width: 100px;
+  height: 100px;
+}
 
 footer {
   background-color: #031c6c;
@@ -502,7 +565,7 @@ footer {
   width: 16px;
 }
 
-.facebook img{
+.facebook img {
   width: 16px;
   height: 22px;
   padding-top: 5px;
@@ -516,7 +579,7 @@ footer button {
 }
 
 footer button a {
-  color: #031C6C;
+  color: #031c6c;
 }
 
 @media (min-width: 40em) {
